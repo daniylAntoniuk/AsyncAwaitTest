@@ -10,7 +10,7 @@ namespace AsyncTest
         {
             Console.WriteLine("Hello World!");
             var mainThreadId = Thread.CurrentThread.ManagedThreadId;
-            Console.WriteLine("Main finish main thread: " + mainThreadId);
+            Console.WriteLine("Main thread: " + mainThreadId);
             await MethodNonWork();
             await MethodWork();
             //Work
