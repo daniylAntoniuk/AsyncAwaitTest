@@ -20,7 +20,7 @@ namespace AsyncTest
         {
             var threadId = Thread.CurrentThread.ManagedThreadId;
             Thread.Sleep(3000);
-            Console.WriteLine("Method finish id:" + threadId);
+            Console.WriteLine("Method finished, id:" + threadId);
         }
         static async Task MethodWork()
         {
@@ -28,7 +28,7 @@ namespace AsyncTest
             {
                 var threadId = Thread.CurrentThread.ManagedThreadId;
                 Thread.Sleep(3000);
-                Console.WriteLine("Method finish id:" + threadId);
+                Console.WriteLine("Method finished, id:" + threadId);
             });
         }
     }
